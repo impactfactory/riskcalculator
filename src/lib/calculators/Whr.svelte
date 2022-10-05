@@ -23,7 +23,7 @@
 			{:else if parseFloat((taille / hip).toFixed(3)) > 0.99}
 				<span class="adi">Adipositas</span>
 			{/if}
-		{:else}{/if}
+		{/if}
 	</h3>
 	<small>* Waste to Hip Ratio / Taille-Umfang durch Hüftumfang</small>
 {/if}

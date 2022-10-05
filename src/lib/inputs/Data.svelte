@@ -11,7 +11,7 @@
 	let repeats = 100;
 </script>
 
-{#if $answers.risk1_6.includes('whr')}
+{#if $answers.risk1_6.includes('whr') || $answers.risk1_6.includes('bel')}
 	<fieldset class="radiogroup">
 		<div class="gender">
 			<div class="form-control">
@@ -70,7 +70,7 @@
 		<input name="hip" type="number" class="input input-bordered w-full max-w-xs" bind:value={hip} />
 		<span class="pl-2">cm</span>
 	{/if}
-	{#if $answers.risk1_6.includes('whr') || $answers.risk1_6.includes('whtr')}
+	{#if $answers.risk1_6.includes('whr') || $answers.risk1_6.includes('whtr') || $answers.risk1_6.includes('bel')}
 		<label for="taille" class="label">
 			<span class="label-text">Taille</span>
 		</label>

@@ -1,5 +1,6 @@
 <script lang="ts">
 	import { fade } from 'svelte/transition';
+	import Bel from './calculators/Bel.svelte';
 	import Bmi from './calculators/Bmi.svelte';
 	import Whr from './calculators/Whr.svelte';
 	import Whtr from './calculators/Whtr.svelte';
@@ -29,6 +30,11 @@
 		{#if test.includes('whtr')}
 			<div in:fade={{ duration: 3000 }}>
 				<Whtr bind:height bind:taille bind:age />
+			</div>
+		{/if}
+		{#if test.includes('bel')}
+			<div in:fade={{ duration: 3000 }}>
+				<Bel bind:taille bind:gender />
 			</div>
 		{/if}
 

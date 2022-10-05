@@ -25,6 +25,12 @@
 			<span class="label-text">WHR (Waste to Hip Ratio)</span>
 		</label>
 	</div>
+	<div class="form-control">
+		<label class="cursor-pointer">
+			<input type="checkbox" class="checkbox checkbox-sm" value="bel" bind:group={test} />
+			<span class="label-text">Bauchumfang-Test</span>
+		</label>
+	</div>
 </fieldset>
 
 <style>
