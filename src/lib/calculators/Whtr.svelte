@@ -12,33 +12,33 @@
 
 		{#if age < 15}
 			{#if parseFloat((taille / height).toFixed(3)) <= 0.34}
-				Untergewicht
+				<span class="under">Untergewicht</span>
 			{:else if parseFloat((taille / height).toFixed(3)) > 0.34 && parseFloat((taille / height).toFixed(3)) <= 0.45}
-				Normalgewicht
+				<span class="normal">Normalgewicht</span>
 			{:else if parseFloat((taille / height).toFixed(3)) > 0.45 && parseFloat((taille / height).toFixed(3)) <= 0.51}
-				Übergewicht
+				<span class="over">Übergewicht</span>
 			{:else if parseFloat((taille / height).toFixed(3)) > 0.52}
-				Adipositas
+				<span class="adi">Adipositas</span>
 			{/if}
 		{:else if age >= 15 && age <= 40}
 			{#if parseFloat((taille / height).toFixed(3)) <= 0.4}
-				Untergewicht
+				<span class="under">Untergewicht</span>
 			{:else if parseFloat((taille / height).toFixed(3)) > 0.4 && parseFloat((taille / height).toFixed(3)) <= 0.5}
-				Normalgewicht
+				<span class="normal">Normalgewicht</span>
 			{:else if parseFloat((taille / height).toFixed(3)) > 0.5 && parseFloat((taille / height).toFixed(3)) <= 0.56}
-				Übergewicht
+				<span class="over">Übergewicht</span>
 			{:else if parseFloat((taille / height).toFixed(3)) > 0.57}
-				Adipositas
+				<span class="adi">Adipositas</span>
 			{/if}
 		{:else if age > 40}
 			{#if parseFloat((taille / height).toFixed(3)) <= 0.4}
-				Untergewicht
+				<span class="under">Untergewicht</span>
 			{:else if parseFloat((taille / height).toFixed(3)) > 0.4 && parseFloat((taille / height).toFixed(3)) <= 0.6}
-				Normalgewicht
+				<span class="normal">Normalgewicht</span>
 			{:else if parseFloat((taille / height).toFixed(3)) > 0.6 && parseFloat((taille / height).toFixed(3)) <= 0.66}
-				Übergewicht
+				<span class="over">Übergewicht</span>
 			{:else if parseFloat((taille / height).toFixed(3)) > 0.67}
-				Adipositas
+				<span class="adi">Adipositas</span>
 			{/if}
 		{/if}
 	</h3>

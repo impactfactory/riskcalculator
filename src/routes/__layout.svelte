@@ -77,7 +77,8 @@
 	}
 
 	:global([type='checkbox']),
-	:global([type='radio']) {
+	:global([type='radio']),
+	:global([type='number']) {
 		background: var(--inputbg);
 		border-color: var(--bordercolor) !important;
 	}

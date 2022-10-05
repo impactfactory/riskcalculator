@@ -1,10 +1,10 @@
 <script lang="ts">
-	import { answers } from '$lib/stores';
 	export let test: string;
 </script>
 
-<fieldset>
-	<legend class="pb-3">Wählen Sie die Methodik:</legend>
+<h2>Wählen Sie die Methode:</h2>
+
+<fieldset class="checkboxgroup">
 	<div class="form-control">
 		<label class="cursor-pointer">
 			<input type="checkbox" class="checkbox checkbox-sm" value="whtr" bind:group={test} />
@@ -26,3 +26,11 @@
 		</label>
 	</div>
 </fieldset>
+
+<style>
+	fieldset {
+		border-bottom: 1px dashed var(--bodycolor);
+		border-top: 1px dashed var(--bodycolor);
+		padding: 0.5rem 0 1rem 0;
+	}
+</style>
