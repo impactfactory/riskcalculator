@@ -16,5 +16,3 @@
 <Data bind:weight bind:height bind:taille bind:hip bind:gender bind:age />
 
 <Results bind:age bind:gender bind:hip bind:height bind:taille bind:test bind:weight />
-
-{test}

@@ -9,7 +9,7 @@
 		{#if gender == 'weiblich'}
 			{#if taille <= 80}
 				<span class="normal">Normalgewicht</span>
-			{:else if taille > 80}
+			{:else if taille > 80 && taille <= 88}
 				<span class="over">Übergewicht</span>
 			{:else if taille > 88}
 				<span class="adi">Adipositas</span>
@@ -17,7 +17,7 @@
 		{:else if gender == 'männlich'}
 			{#if taille <= 94}
 				<span class="normal">Normalgewicht</span>
-			{:else if taille > 94}
+			{:else if taille > 94 && taille <= 102}
 				<span class="over">Übergewicht</span>
 			{:else if taille > 102}
 				<span class="adi">Adipositas</span>

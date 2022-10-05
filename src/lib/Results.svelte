@@ -39,9 +39,9 @@
 		{/if}
 
 		<p>
-			<strong>Wichtiger Hinweis:</strong> Eine endgültige Diagnose jeglicher Art <br />
-			kann nur mit einer Untersuchung durch einen Arzt <br />
-			gemacht werden.
+			<strong>Wichtiger Hinweis:</strong> <br />
+			Eine endgültige Diagnose jeglicher Art kann nur mit einer Untersuchung durch einen Arzt gemacht
+			werden.
 		</p>
 	{/if}
 {/if}
