@@ -18,11 +18,11 @@
 		{:else if bmi >= 25 && bmi <= 29.99}
 			<span class="over">Übergewicht (Präadipositas)</span>
 		{:else if bmi >= 30 && bmi <= 34.99}
-			<span class="adi">Adipositas Grad 1</span>
+			<span class="adi">Adipositas I (krankhaftes Übergewicht)</span>
 		{:else if bmi >= 35 && bmi <= 39.99}
-			<span class="adi">Adipositas Grad 2</span>
+			<span class="adi">Adipositas II (krankhaftes Übergewicht)</span>
 		{:else if bmi >= 40}
-			<span class="adi">Adipositas Grad 3</span>
+			<span class="adi">Adipositas III (morbide Adipositas)</span>
 		{/if}
 	</h3>
 	<small
