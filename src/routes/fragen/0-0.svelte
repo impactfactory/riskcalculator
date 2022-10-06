@@ -1,7 +1,6 @@
 <script lang="ts">
 	import Exit from '$lib/Exit.svelte';
 	import Calc from '$lib/inputs/Calc.svelte';
-
 	import { answers } from '$lib/stores';
 	import { fade } from 'svelte/transition';
 
@@ -12,7 +11,7 @@
 	let height: number;
 	let hip: number;
 	let taille: number;
-	let test: string;
+	let test: any;
 	let weight: number;
 </script>
 
@@ -27,8 +26,4 @@
 		bind:gender={$answers.risk1_5}
 		bind:test={$answers.risk1_6}
 	/>
-
-	<!--
-	<Calc bind:age bind:weight bind:height bind:taille bind:hip bind:gender bind:test />
--->
 </div>

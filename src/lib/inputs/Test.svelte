@@ -1,5 +1,5 @@
 <script lang="ts">
-	export let test: string;
+	export let test: any;
 </script>
 
 <h2>Wählen Sie die Methode:</h2>
@@ -15,8 +15,20 @@
 	</div>
 	<div class="form-control">
 		<label class="cursor-pointer">
-			<input type="checkbox" class="checkbox checkbox-sm" value="bmi" bind:group={test} />
-			<span class="label-text">BMI (Body Mass Index)</span>
+			<input type="checkbox" class="checkbox checkbox-sm" value="bmiwho" bind:group={test} />
+			<span class="label-text">BMI (Body Mass Index) WHO</span>
+		</label>
+	</div>
+	<div class="form-control">
+		<label class="cursor-pointer">
+			<input type="checkbox" class="checkbox checkbox-sm" value="bmidge" bind:group={test} />
+			<span class="label-text">BMI (Body Mass Index) DGE</span>
+		</label>
+	</div>
+	<div class="form-control">
+		<label class="cursor-pointer">
+			<input type="checkbox" class="checkbox checkbox-sm" value="bminrc" bind:group={test} />
+			<span class="label-text">BMI (Body Mass Index) NRC</span>
 		</label>
 	</div>
 	<div class="form-control">

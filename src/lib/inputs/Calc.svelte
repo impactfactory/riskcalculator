@@ -7,7 +7,7 @@
 	export let taille: number;
 	export let hip: number;
 	export let gender: string;
-	export let test: string;
+	export let test: any;
 	export let age: number;
 </script>
 

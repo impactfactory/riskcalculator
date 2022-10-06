@@ -9,7 +9,7 @@
 {#if !isNaN((taille / height).toFixed(3))}
 	{@const whtr = taille / height}
 	<h3 class="pb-0 mb-0">
-		WHtR: {whtr.toFixed(5)} /
+		WHtR: {whtr.toFixed(1)} /
 
 		{#if age <= 15}
 			{#if whtr <= 0.34}

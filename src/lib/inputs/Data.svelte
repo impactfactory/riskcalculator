@@ -7,11 +7,9 @@
 	export let hip: number;
 	export let gender: string;
 	export let age: number;
-
-	let repeats = 100;
 </script>
 
-{#if $answers.risk1_6.includes('whr') || $answers.risk1_6.includes('bel')}
+{#if $answers.risk1_6.includes('whr') || $answers.risk1_6.includes('bel') || $answers.risk1_6.includes('bmidge')}
 	<fieldset class="radiogroup">
 		<div class="gender">
 			<div class="form-control">
@@ -30,7 +28,7 @@
 	</fieldset>
 {/if}
 <fieldset>
-	{#if $answers.risk1_6.includes('whtr')}
+	{#if $answers.risk1_6.includes('whtr') || $answers.risk1_6.includes('bminrc')}
 		<label for="age" class="label">
 			<span class="label-text">Alter</span>
 		</label>
@@ -39,7 +37,7 @@
 		<span class="pl-2">Jahre</span>
 	{/if}
 
-	{#if $answers.risk1_6.includes('bmi')}
+	{#if $answers.risk1_6.includes('bmiwho') || $answers.risk1_6.includes('bminrc') || $answers.risk1_6.includes('bmidge')}
 		<label for="weight" class="label">
 			<span class="label-text">Gewicht</span>
 		</label>
@@ -51,7 +49,7 @@
 		/>
 		<span class="pl-2">kg</span>
 	{/if}
-	{#if $answers.risk1_6.includes('bmi') || $answers.risk1_6.includes('whtr')}
+	{#if $answers.risk1_6.includes('bmiwho') || $answers.risk1_6.includes('whtr') || $answers.risk1_6.includes('bminrc') || $answers.risk1_6.includes('bmidge')}
 		<label for="height" class="label">
 			<span class="label-text"> Grösse</span>
 		</label>
