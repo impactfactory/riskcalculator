@@ -20,19 +20,13 @@
 	<h2>Ihr Resultat</h2>
 
 	{#if test.includes('bmiwho')}
-		<div in:fade={{ duration: 3000 }}>
-			<Bmiwho bind:weight bind:height />
-		</div>
+		<Bmiwho bind:weight bind:height />
 	{/if}
 	{#if test.includes('bmidge')}
-		<div in:fade={{ duration: 3000 }}>
-			<Bmidge bind:weight bind:height bind:gender />
-		</div>
+		<Bmidge bind:weight bind:height bind:gender />
 	{/if}
 	{#if test.includes('bminrc')}
-		<div in:fade={{ duration: 3000 }}>
-			<Bminrc bind:weight bind:height bind:age />
-		</div>
+		<Bminrc bind:weight bind:height bind:age />
 	{/if}
 	{#if test.includes('whr')}
 		<div in:fade={{ duration: 3000 }}>
@@ -55,9 +49,6 @@
 		Eine endgültige Diagnose jeglicher Art kann nur mit einer Untersuchung durch einen Arzt gemacht werden.
 	</p>
 {/if}
-
-{test} and {gender} and {height}
-from results<br />
 
 <style>
 	:global(.under),
