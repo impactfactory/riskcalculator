@@ -38,4 +38,5 @@
 			{/if}
 		</h3>
 		<small> * Body Mass Index / Gewicht durch Grösse im Quadrat, Berechnungsmethodik: WHO </small>
-	</div>{/if}
+	</div>
+{/if}

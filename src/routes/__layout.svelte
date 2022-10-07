@@ -128,7 +128,8 @@
 		:global(li) {
 			color: var(--bodycolor);
 		}
-		:global(.selectgroup select) {
+		:global(.selectgroup select),
+		:global([type='number']) {
 			background: var(--inputbg) !important;
 			border-color: var(--bordercolor);
 			color: #333;

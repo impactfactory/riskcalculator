@@ -1,4 +1,5 @@
 <script lang="ts">
+	import { fade } from 'svelte/transition';
 	import Adi1 from './messages/Adi1.svelte';
 	import Adi2 from './messages/Adi2.svelte';
 	import Adi3 from './messages/Adi3.svelte';
@@ -15,7 +16,7 @@
 
 {#if !isNaN((weight / (height * height)) * 10000)}
 	{@const bmi = ((weight / (height * height)) * 10000).toFixed(2)}
-
+	<div in:fade={{ duration: 3000 }}>
 	<h3 class="pb-0 mb-0">
 		BMI: {bmi.toFixed(1)} /
 		{#if age >= 19 && age <= 24}
@@ -65,6 +66,8 @@
 			rel="noopener">Quelle Berechnungsmethodik</a
 		></small
 	>
+	<Disclaimer />
+</div>
 {/if}
 
 <!-- https://plakos-akademie.de/bmi-rechner/ -->

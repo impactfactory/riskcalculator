@@ -1,10 +1,10 @@
 <script lang="ts">
 	//import { answers } from '$lib/stores';
-	import { fade } from 'svelte/transition';
 	import Bel from './calculators/Bel.svelte';
 	import Bmidge from './calculators/Bmidge.svelte';
 	import Bminrc from './calculators/Bminrc.svelte';
 	import Bmiwho from './calculators/Bmiwho.svelte';
+	import Disclaimer from './calculators/messages/Disclaimer.svelte';
 	import Whr from './calculators/Whr.svelte';
 	import Whtr from './calculators/Whtr.svelte';
 	export let weight: number;
@@ -29,25 +29,15 @@
 		<Bminrc bind:weight bind:height bind:age />
 	{/if}
 	{#if test.includes('whr')}
-		<div in:fade={{ duration: 3000 }}>
-			<Whr bind:taille bind:hip bind:gender />
-		</div>
+		<Whr bind:taille bind:hip bind:gender />
 	{/if}
 	{#if test.includes('whtr')}
-		<div in:fade={{ duration: 3000 }}>
-			<Whtr bind:height bind:taille bind:age />
-		</div>
+		<Whtr bind:height bind:taille bind:age />
 	{/if}
 	{#if test.includes('bel')}
-		<div in:fade={{ duration: 3000 }}>
-			<Bel bind:taille bind:gender />
-		</div>
+		<Bel bind:taille bind:gender />
 	{/if}
-
-	<p>
-		<strong>Wichtiger Hinweis:</strong> <br />
-		Eine endgültige Diagnose jeglicher Art kann nur mit einer Untersuchung durch einen Arzt gemacht werden.
-	</p>
+	<Disclaimer />
 {/if}
 
 <style>
