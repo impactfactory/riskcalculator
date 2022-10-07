@@ -6,8 +6,8 @@
 	import Norm from './messages/Norm.svelte';
 	import Over from './messages/Over.svelte';
 	import Under1 from './messages/Under1.svelte';
-	import Under2 from './messages/Under1.svelte';
-	import Under3 from './messages/Under1.svelte';
+	import Under2 from './messages/Under2.svelte';
+	import Under3 from './messages/Under3.svelte';
 
 	export let weight: number;
 	export let height: number;
@@ -21,7 +21,7 @@
 			BMI: {bmi.toFixed(1)} /
 
 			<!-- < 35  -->
-			{#if age > 35}
+			{#if age < 35}
 				{#if bmi < 16}
 					<Under3 />
 				{:else if bmi >= 16 && bmi <= 16.9}

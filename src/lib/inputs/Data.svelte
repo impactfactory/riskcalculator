@@ -32,8 +32,15 @@
 		<label for="age" class="label">
 			<span class="label-text">Alter</span>
 		</label>
-
-		<input name="age" type="number" class="input input-bordered w-full max-w-xs" bind:value={age} />
+		<input
+			name="age"
+			type="number"
+			step="1"
+			min="18"
+			max="110"
+			class="input input-bordered w-full max-w-xs"
+			bind:value={age}
+		/>
 		<span class="pl-2">Jahre</span>
 	{/if}
 
@@ -44,6 +51,7 @@
 		<input
 			name="weight"
 			type="number"
+			step="1"
 			class="input input-bordered w-full max-w-xs"
 			bind:value={weight}
 		/>
@@ -56,6 +64,7 @@
 		<input
 			name="height"
 			type="number"
+			step="1"
 			class="input input-bordered w-full max-w-xs"
 			bind:value={height}
 		/>
@@ -65,7 +74,13 @@
 		<label for="hip" class="label">
 			<span class="label-text">Hüftumfang</span>
 		</label>
-		<input name="hip" type="number" class="input input-bordered w-full max-w-xs" bind:value={hip} />
+		<input
+			name="hip"
+			type="number"
+			step="1"
+			class="input input-bordered w-full max-w-xs"
+			bind:value={hip}
+		/>
 		<span class="pl-2">cm</span>
 	{/if}
 	{#if $answers.risk1_6.includes('whr') || $answers.risk1_6.includes('whtr') || $answers.risk1_6.includes('bel')}
@@ -75,6 +90,7 @@
 		<input
 			name="taille"
 			type="number"
+			step="1"
 			class="input input-bordered w-full max-w-xs"
 			bind:value={taille}
 		/>
