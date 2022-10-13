@@ -32,7 +32,7 @@
 			{/if}
 		</h3>
 		<small
-			>* Waste to Hip Ratio / Taille-Umfang durch Hüftumfang. <a
+			>* Waist to Hip Ratio / Taille-Umfang durch Hüftumfang. <a
 				href="http://apps.who.int/iris/bitstream/handle/10665/44583/9789241501491_eng.pdf;jsessionid=71DEE026302DBDCA957DC0D970598D8B?sequence=1"
 				rel="noopener">Quelle Berechnungsmethodik</a
 			></small

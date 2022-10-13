@@ -164,7 +164,7 @@
 			{/if}
 		</h3>
 		<small
-			>* Waste to Height Ratio / Umfang Taille durch Körpergrösse / <a
+			>* Waist to Height Ratio / Umfang Taille durch Körpergrösse / <a
 				href="https://www.mercedes-benz-bkk.com/gesundheit/ernaehrung/whtr"
 				rel="noopener">Quelle Berechnungsmethodik</a
 			></small
