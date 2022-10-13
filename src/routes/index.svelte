@@ -30,6 +30,6 @@
 <style>
 	div {
 		display: block;
-		width: 380px;
+		width: 100%;
 	}
 </style>

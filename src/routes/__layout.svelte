@@ -25,6 +25,10 @@
 </div>
 
 <style>
+	.prose {
+		max-width: 300px;
+	}
+
 	:root {
 		--bodycolor: #333;
 		--bordercolor: #bbb;
