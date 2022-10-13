@@ -16,12 +16,13 @@ module.exports = {
 			{
 			  aqua: {
 				...require("daisyui/src/colors/themes")["[data-theme=autumn]"],
-				"base-100": "#fcf3ee",
+				"base-100": "#dddddd",
 				"base-content": "#333",
 				"primary": "#81050c",
 				"primary-content": "#fff",
 				"secondary": "#c9e7e4", 
-				"info": "#fff"
+				"info": "#fff",
+				"success": "green"
 			           }
 			},
             {

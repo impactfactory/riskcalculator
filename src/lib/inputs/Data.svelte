@@ -30,7 +30,7 @@
 <fieldset>
 	{#if $answers.risk1_6.includes('whtr') || $answers.risk1_6.includes('bminrc')}
 		<label for="age" class="label">
-			<span class="label-text">Alter</span>
+			<span class="label-text">Alter (Jahre)</span>
 		</label>
 		<input
 			name="age"
@@ -41,12 +41,12 @@
 			class="input input-bordered w-full max-w-xs"
 			bind:value={age}
 		/>
-		<span class="pl-2">Jahre</span>
+		<!-- <span class="pl-2">Jahre</span>-->
 	{/if}
 
 	{#if $answers.risk1_6.includes('bmiwho') || $answers.risk1_6.includes('bminrc') || $answers.risk1_6.includes('bmidge')}
 		<label for="weight" class="label">
-			<span class="label-text">Gewicht</span>
+			<span class="label-text">Gewicht (kg)</span>
 		</label>
 		<input
 			name="weight"
@@ -55,11 +55,11 @@
 			class="input input-bordered w-full max-w-xs"
 			bind:value={weight}
 		/>
-		<span class="pl-2">kg</span>
+		<!--<span class="pl-2">kg</span>-->
 	{/if}
 	{#if $answers.risk1_6.includes('bmiwho') || $answers.risk1_6.includes('whtr') || $answers.risk1_6.includes('bminrc') || $answers.risk1_6.includes('bmidge')}
 		<label for="height" class="label">
-			<span class="label-text"> Grösse</span>
+			<span class="label-text">Grösse (cm)</span>
 		</label>
 		<input
 			name="height"
@@ -68,11 +68,11 @@
 			class="input input-bordered w-full max-w-xs"
 			bind:value={height}
 		/>
-		<span class="pl-2"> cm</span>
+		<!-- <span class="pl-2"> cm</span> -->
 	{/if}
 	{#if $answers.risk1_6.includes('whr')}
 		<label for="hip" class="label">
-			<span class="label-text">Hüftumfang</span>
+			<span class="label-text">Hüftumfang (cm)</span>
 		</label>
 		<input
 			name="hip"
@@ -81,11 +81,11 @@
 			class="input input-bordered w-full max-w-xs"
 			bind:value={hip}
 		/>
-		<span class="pl-2">cm</span>
+		<!-- <span class="pl-2">cm</span>  -->
 	{/if}
 	{#if $answers.risk1_6.includes('whr') || $answers.risk1_6.includes('whtr') || $answers.risk1_6.includes('bel')}
 		<label for="taille" class="label">
-			<span class="label-text">Taille</span>
+			<span class="label-text">Taille (cm)</span>
 		</label>
 		<input
 			name="taille"
@@ -94,7 +94,7 @@
 			class="input input-bordered w-full max-w-xs"
 			bind:value={taille}
 		/>
-		<span class="pl-2">cm</span>
+		<!-- <span class="pl-2">cm</span> -->
 	{/if}
 </fieldset>
 

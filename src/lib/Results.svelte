@@ -17,7 +17,7 @@
 </script>
 
 {#if test != ''}
-	<h2>Ihr Resultat</h2>
+	<h3>Ihr Resultat</h3>
 
 	{#if test.includes('bmiwho')}
 		<Bmiwho bind:weight bind:height />

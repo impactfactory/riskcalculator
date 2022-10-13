@@ -110,7 +110,9 @@
 
 	:global(.checkboxgroup .label-text),
 	:global(.radiogroup .label-text) {
-		margin-left: 2rem;
+		margin-left: 1rem;
+		position: relative;
+		top: -5px;
 	}
 
 	:global(.chapteropener) {

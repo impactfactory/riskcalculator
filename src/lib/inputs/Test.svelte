@@ -2,14 +2,14 @@
 	export let test: any;
 </script>
 
-<h2>Wählen Sie die Methode:</h2>
+<h3>Berechnungs-Methode:</h3>
 
 <fieldset class="checkboxgroup">
 	<div class="form-control">
 		<label class="cursor-pointer">
 			<input type="checkbox" class="checkbox checkbox-sm" value="whtr" bind:group={test} />
 			<div class="tooltip tooltip-open tooltip-right tooltip-success" data-tip="empfohlen!">
-				<span class="label-text">WHtR</span>
+				<span class="label-text">WHtR &nbsp;&nbsp;</span>
 			</div>
 		</label>
 	</div>
@@ -50,5 +50,6 @@
 		border-bottom: 1px dashed var(--bodycolor);
 		border-top: 1px dashed var(--bodycolor);
 		padding: 0.5rem 0 1rem 0;
+		width: 100%;
 	}
 </style>
